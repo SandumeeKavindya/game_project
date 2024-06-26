@@ -5,9 +5,9 @@ console.log(randomNumber);
 
 function valid() {
     
-    let userInput = parseInt(document.getElementById("addnum").value, 10);
+    let userInput = parseInt(document.getElementById("addnum").value);
 
-    if (randomNumber === userInput) {
+    if (randomNumber == userInput) {
        document.getElementById("btn").innerHTML="You won!!!!!!!!!!!!!!!!!";
     } else if (randomNumber < userInput) {
         document.getElementById("btn").innerHTML="Number is greater than the random number, try again!";
